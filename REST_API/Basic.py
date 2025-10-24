@@ -2,7 +2,7 @@ import requests
 import pandas as pd
 
 try:
-    response = requests.get("http://api.openweathermap.org/geo/1.0/reverse?lat=56.075984&lon=12.512430&appid=3db8fc6d42877ba151fe5f6ba8849b0b")
+    response = requests.get("http://api.openweathermap.org/geo/1.0/reverse?lat=56.075984&lon=12.512430&appid=xxxxxxxx")
     response.raise_for_status()  # Vil kaste en HTTPError for dårlige statuskoder
     data = response.json()
 except requests.exceptions.HTTPError as http_err:
