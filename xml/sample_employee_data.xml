@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<employees>
+    <employee id="301" client="589" lastChanged="2023-11-21">
+        <entryDate>2011-01-01</entryDate>
+        <leaveDate/>
+        <firstName>Jørn</firstName>
+        <lastName>Munk</lastName>
+        <address>Århusgade 67, 1. th.</address>
+        <postalCode>9500</postalCode>
+        <city>Hobro</city>
+        <country>DK</country>
+        <workPhone/>
+        <workContract>01</workContract>
+        <workContractText>Månedsløn bagud</workContractText>
+        <employeeArea>93</employeeArea>
+        <positionId>50001960</positionId>
+        <position>Pædagog</position>
+        <positionShort>Pædagog</positionShort>
+        <invoiceRecipient>false</invoiceRecipient>
+        <productionNumber>1017860336</productionNumber>
+        <isManager>false</isManager>
+        <superiorLevel>0</superiorLevel>
+        <subordinateLevel>00</subordinateLevel>
+        <orgUnit>885773</orgUnit>
+        <payGrade>1-5001-033</payGrade>
+        <payGradeText>LÆRER</payGradeText>
+        <wageStep>31</wageStep>
+        <calculatedStep>41</calculatedStep>
+        <numerator>37.000</numerator>
+        <denominator>37.000</denominator>
+        <initialEntry>2011-01-01</initialEntry>
+        <entryIntoGroup>2011-01-01</entryIntoGroup>
+        <function artId="9007" startDate="2023-01-01" endDate="9999-12-31">
+            <orgDaekning/>
+            <artText>Hoved MED</artText>
+            <members>0023</members>
+            <roleId>0</roleId>
+        </function>
+    </employee>
+    <employee id="302" client="589" lastChanged="2023-12-15">
+        <entryDate>2015-03-15</entryDate>
+        <leaveDate>2024-06-30</leaveDate>
+        <firstName>Anne</firstName>
+        <lastName>Nielsen</lastName>
+        <address>Søndergade 12</address>
+        <postalCode>8000</postalCode>
+        <city>Aarhus C</city>
+        <country>DK</country>
+        <workPhone>+4587654321</workPhone>
+        <workContract>02</workContract>
+        <workContractText>Timeløn</workContractText>
+        <employeeArea>94</employeeArea>
+        <positionId>50002101</positionId>
+        <position>Lærer</position>
+        <positionShort>Lærer</positionShort>
+        <invoiceRecipient>true</invoiceRecipient>
+        <productionNumber>1017860445</productionNumber>
+        <isManager>true</isManager>
+        <superiorLevel>1</superiorLevel>
+        <subordinateLevel>03</subordinateLevel>
+        <orgUnit>885774</orgUnit>
+        <payGrade>1-5001-045</payGrade>
+        <payGradeText>LÆRER MED TILLÆG</payGradeText>
+        <wageStep>42</wageStep>
+        <calculatedStep>52</calculatedStep>
+        <numerator>30.000</numerator>
+        <denominator>37.000</denominator>
+        <initialEntry>2015-03-15</initialEntry>
+        <entryIntoGroup>2015-03-15</entryIntoGroup>
+        <function artId="9008" startDate="2020-01-01" endDate="9999-12-31">
+            <orgDaekning>A</orgDaekning>
+            <artText>Afdelingsleder</artText>
+            <members>0015</members>
+            <roleId>1</roleId>
+        </function>
+    </employee>
+    <employee id="303" client="589" lastChanged="2024-01-10">
+        <entryDate>2020-08-01</entryDate>
+        <leaveDate/>
+        <firstName>Lars</firstName>
+        <lastName>Andersen</lastName>
+        <address>Vesterbrogade 145, 2. tv.</address>
+        <postalCode>9000</postalCode>
+        <city>Aalborg</city>
+        <country>DK</country>
+        <workPhone/>
+        <workContract>01</workContract>
+        <workContractText>Månedsløn bagud</workContractText>
+        <employeeArea>93</employeeArea>
+        <positionId>50002234</positionId>
+        <position>Pædagog</position>
+        <positionShort>Pædagog</positionShort>
+        <invoiceRecipient>false</invoiceRecipient>
+        <productionNumber>1017860556</productionNumber>
+        <isManager>false</isManager>
+        <superiorLevel>0</superiorLevel>
+        <subordinateLevel>00</subordinateLevel>
+        <orgUnit>885773</orgUnit>
+        <payGrade>1-5001-033</payGrade>
+        <payGradeText>LÆRER</payGradeText>
+        <wageStep>15</wageStep>
+        <calculatedStep>15</calculatedStep>
+        <numerator>37.000</numerator>
+        <denominator>37.000</denominator>
+        <initialEntry>2020-08-01</initialEntry>
+        <entryIntoGroup>2020-08-01</entryIntoGroup>
+        <function artId="9007" startDate="2023-01-01" endDate="9999-12-31">
+            <orgDaekning/>
+            <artText>Hoved MED</artText>
+            <members>0023</members>
+            <roleId>0</roleId>
+        </function>
+    </employee>
+</employees>
