@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+    <record id="1">
+        <name>Product Alpha</name>
+        <category>Electronics</category>
+        <price>299.99</price>
+        <in_stock>true</in_stock>
+        <quantity>45</quantity>
+    </record>
+    <record id="2">
+        <name>Product Beta</name>
+        <category>Clothing</category>
+        <price>49.99</price>
+        <in_stock>true</in_stock>
+        <quantity>120</quantity>
+    </record>
+    <record id="3">
+        <name>Product Gamma</name>
+        <category>Electronics</category>
+        <price>599.99</price>
+        <in_stock>false</in_stock>
+        <quantity>0</quantity>
+    </record>
+    <record id="4">
+        <name>Product Delta</name>
+        <category>Home & Garden</category>
+        <price>89.99</price>
+        <in_stock>true</in_stock>
+        <quantity>30</quantity>
+    </record>
+    <record id="5">
+        <name>Product Epsilon</name>
+        <category>Books</category>
+        <price>19.99</price>
+        <in_stock>true</in_stock>
+        <quantity>250</quantity>
+    </record>
+</data>
