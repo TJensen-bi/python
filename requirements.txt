@@ -1,0 +1,16 @@
+# XML Ingestion Template Dependencies
+# Install with: pip install -r requirements.txt
+
+# Required for DataFrame operations
+pandas>=2.0.0
+
+# Optional: For advanced XSD validation and XPath support
+# Uncomment the line below if you need schema validation:
+# lxml>=5.0.0
+
+# Standard library (no install needed):
+# - xml.etree.ElementTree
+# - typing
+# - dataclasses
+# - pathlib
+# - logging
