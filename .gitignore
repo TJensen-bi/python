@@ -47,6 +47,7 @@ Thumbs.db
 htmlcov/
 
 # Data files (uncomment if needed)
-# *.csv
 # *.xlsx
-# *.xml
+
+# Generated/exported data files
+employees_export.csv
