@@ -23,7 +23,7 @@
     </record>
     <record id="4">
         <name>Product Delta</name>
-        <category>Home & Garden</category>
+        <category>Home &amp; Garden</category>
         <price>89.99</price>
         <in_stock>true</in_stock>
         <quantity>30</quantity>
