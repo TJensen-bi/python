@@ -200,14 +200,14 @@ def example_1_basic_ingestion():
     config = XMLIngestionConfig(record_tag='employee')
     ingestor = XMLIngestor(config)
 
-    df = ingestor.ingest_to_dataframe(
+    df = (ingestor.ingest_to_dataframe(
         'sample_employee_data.xml',
-        transform_func=transform_employee_basic
-    )
+        transform_func=transform_employee_detailed
+    ))
 
     print(f"\nLoaded {len(df)} employees")
     print("\nBasic employee information:")
-    print(df[['employee_id', 'first_name', 'last_name', 'position', 'is_manager']])
+    print(df[['employee_id', 'first_name', 'last_name', 'position', 'is_manager', 'city']])
 
     print("\nData types:")
     print(df.dtypes)
@@ -215,6 +215,7 @@ def example_1_basic_ingestion():
 
 def example_2_detailed_ingestion():
     """Example 2: Detailed ingestion with all fields including nested data"""
+
     print("\n" + "="*70)
     print("Example 2: Detailed Employee Ingestion (All Fields)")
     print("="*70)
@@ -327,17 +328,18 @@ def example_5_export_to_csv():
 
     df = ingestor.ingest_to_dataframe(
         'sample_employee_data.xml',
-        transform_func=transform_employee_detailed
+        transform_func=transform_employee_basic
     )
 
     # Export to CSV
     output_file = 'employees_export.csv'
-    df.to_csv(output_file, index=False, encoding='utf-8-sig')  # utf-8-sig for Excel compatibility
+    df.to_csv(output_file, index=False, encoding='utf-8-sig', compression='zip')  # utf-8-sig for Excel compatibility
 
     print(f"\nExported {len(df)} employees to '{output_file}'")
     print(f"Total columns exported: {len(df.columns)}")
     print(f"\nColumns: {list(df.columns)[:10]}... (showing first 10)")
 
+   
 
 def example_6_handle_special_characters():
     """Example 6: Demonstrate handling of Danish special characters"""
@@ -364,7 +366,8 @@ def example_6_handle_special_characters():
             print()
 
 
-if __name__ == '__main__':
+def main():
+
     print("="*70)
     print("EMPLOYEE XML INGESTION - REAL WORLD EXAMPLE")
     print("="*70)
@@ -403,3 +406,6 @@ if __name__ == '__main__':
         print(f"\n❌ Error: {e}")
         import traceback
         traceback.print_exc()
+
+if __name__ == '__main__':
+    main()
