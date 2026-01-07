@@ -175,7 +175,13 @@ for batch in ingestor.ingest_batch('huge_file.xml'):
 ## Error Handling
 
 ```python
-from xml_ingestion_template import XMLIngestionError
+from xml_ingestion_template import XMLIngestor, XMLIngestionConfig, XMLIngestionError
+import logging
+
+logger = logging.getLogger(__name__)
+
+config = XMLIngestionConfig(record_tag='record')
+ingestor = XMLIngestor(config)
 
 try:
     df = ingestor.ingest_to_dataframe('data.xml')
