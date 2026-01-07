@@ -16,8 +16,7 @@ import pandas as pd
 from pathlib import Path
 import logging
 
-# Configure logging
-logging.basicConfig(level=logging.INFO)
+# Get logger (users should configure logging in their application)
 logger = logging.getLogger(__name__)
 
 
@@ -66,6 +65,10 @@ class XMLIngestor:
 
     def _convert_type(self, value: str, target_type: type, default: Any = None) -> Any:
         """Convert string value to target type with error handling"""
+        # Handle None and empty strings
+        if value is None or (isinstance(value, str) and value.strip() == ''):
+            return default
+
         try:
             if target_type == bool:
                 return value.lower() in ('true', '1', 'yes', 'on')
