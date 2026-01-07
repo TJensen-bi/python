@@ -3,7 +3,6 @@
     <employee id="301" client="589" lastChanged="2023-11-21">
         <entryDate>2011-01-01</entryDate>
         <leaveDate/>
-        <cpr suppId="0">1409529991</cpr>
         <firstName>Jørn</firstName>
         <lastName>Munk</lastName>
         <address>Århusgade 67, 1. th.</address>
@@ -41,7 +40,6 @@
     <employee id="302" client="589" lastChanged="2023-12-15">
         <entryDate>2015-03-15</entryDate>
         <leaveDate>2024-06-30</leaveDate>
-        <cpr suppId="0">2506859876</cpr>
         <firstName>Anne</firstName>
         <lastName>Nielsen</lastName>
         <address>Søndergade 12</address>
@@ -79,7 +77,6 @@
     <employee id="303" client="589" lastChanged="2024-01-10">
         <entryDate>2020-08-01</entryDate>
         <leaveDate/>
-        <cpr suppId="0">1203949123</cpr>
         <firstName>Lars</firstName>
         <lastName>Andersen</lastName>
         <address>Vesterbrogade 145, 2. tv.</address>

@@ -62,7 +62,6 @@ def transform_employee_basic(element: ET.Element) -> Dict[str, Any]:
         'last_changed': element.get('lastChanged', ''),
 
         # Personal information
-        'cpr': element.findtext('cpr', ''),
         'first_name': element.findtext('firstName', ''),
         'last_name': element.findtext('lastName', ''),
         'address': element.findtext('address', ''),
@@ -107,8 +106,6 @@ def transform_employee_detailed(element: ET.Element) -> Dict[str, Any]:
         'last_changed': element.get('lastChanged', ''),
 
         # Personal information
-        'cpr': element.findtext('cpr', ''),
-        'cpr_supp_id': element.find('cpr').get('suppId', '') if element.find('cpr') is not None else '',
         'first_name': element.findtext('firstName', ''),
         'last_name': element.findtext('lastName', ''),
         'full_name': f"{element.findtext('firstName', '')} {element.findtext('lastName', '')}",
@@ -299,7 +296,6 @@ def example_4_data_quality_checks():
     print("-" * 70)
 
     # Check for missing critical fields
-    print(f"Employees with missing CPR: {df['cpr'].isna().sum()}")
     print(f"Employees with missing first name: {df['first_name'].isna().sum()}")
     print(f"Employees with missing last name: {df['last_name'].isna().sum()}")
     print(f"Employees with missing position: {df['position'].isna().sum()}")
